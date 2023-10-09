@@ -58,7 +58,7 @@ namespace HackerRankTasks
             int p = Convert.ToInt32(Console.ReadLine().Trim());
             int result = DrawingBook.StartTask(n, p);
             Console.WriteLine(result);
-            */
+            
 
             string[] bnm = Console.ReadLine().Split(' ');
             int b = Convert.ToInt32(bnm[0]);
@@ -68,6 +68,14 @@ namespace HackerRankTasks
             int[] drives = Array.ConvertAll(Console.ReadLine().Split(' '), drivesTemp => Convert.ToInt32(drivesTemp));
             int moneySpent = ElectronicShop.StartTask(keyboards, drives, b);
             Console.WriteLine(moneySpent.ToString());
+            */
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int n = Convert.ToInt32(firstMultipleInput[0]);
+            int k = Convert.ToInt32(firstMultipleInput[1]);
+            List<int> bill = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(billTemp => Convert.ToInt32(billTemp)).ToList();
+            int b = Convert.ToInt32(Console.ReadLine().Trim());
+            int moneySpent = BillDivision.StartTask(bill, k, b);
         }
     }
 }
