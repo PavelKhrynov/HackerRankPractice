@@ -7,17 +7,21 @@ namespace HackerRankTasks
     {
         static void Main(string[] args)
         {
+            // All using of all tasks
+
             /*
             List<long> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt64(arrTemp)).ToList();
             (long min, long max) = MinMaxSum.StartTask(arr);
             Console.WriteLine($"{min} {max}");
             
+            // --- ---
 
             int candlesCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> candles = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(candlesTemp => Convert.ToInt32(candlesTemp)).ToList();
             int result = BirthdayCakeCandles.StartTask(candles);
             Console.WriteLine(result);
-            
+
+            // --- ---            
 
             int gradesCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> grades = new List<int>();
@@ -31,7 +35,8 @@ namespace HackerRankTasks
             {
                 Console.WriteLine(result[i]);
             }
-            
+
+            // --- ---            
 
             string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
             int s = Convert.ToInt32(firstMultipleInput[0]);
@@ -47,18 +52,21 @@ namespace HackerRankTasks
             (int applesCount, int orangesCount) = AppleAndOrange.StartTask(s, t, a, b, apples, oranges);
             Console.Write($"{applesCount} {orangesCount}");
             
+            // --- ---
 
             int arrCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
             int result = MigratoryBirds.StartTask(arr);
             Console.WriteLine(result);
             
+            // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             int p = Convert.ToInt32(Console.ReadLine().Trim());
             int result = DrawingBook.StartTask(n, p);
             Console.WriteLine(result);
             
+            // --- ---
 
             string[] bnm = Console.ReadLine().Split(' ');
             int b = Convert.ToInt32(bnm[0]);
@@ -68,7 +76,8 @@ namespace HackerRankTasks
             int[] drives = Array.ConvertAll(Console.ReadLine().Split(' '), drivesTemp => Convert.ToInt32(drivesTemp));
             int moneySpent = ElectronicShop.StartTask(keyboards, drives, b);
             Console.WriteLine(moneySpent.ToString());
-            */
+            
+            // --- ---
 
             string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
             int n = Convert.ToInt32(firstMultipleInput[0]);
@@ -76,6 +85,13 @@ namespace HackerRankTasks
             List<int> bill = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(billTemp => Convert.ToInt32(billTemp)).ToList();
             int b = Convert.ToInt32(Console.ReadLine().Trim());
             int moneySpent = BillDivision.StartTask(bill, k, b);
+            */
+            // --- ---
+
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+            int result = PickingNumbers.StartTask(a);
+            Console.WriteLine(result);
         }
     }
 }
