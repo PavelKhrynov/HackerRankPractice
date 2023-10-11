@@ -85,12 +85,21 @@ namespace HackerRankTasks
             List<int> bill = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(billTemp => Convert.ToInt32(billTemp)).ToList();
             int b = Convert.ToInt32(Console.ReadLine().Trim());
             int moneySpent = BillDivision.StartTask(bill, k, b);
-            */
+            
             // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
             int result = PickingNumbers.StartTask(a);
+            Console.WriteLine(result);
+            */
+            // --- ---
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int n = Convert.ToInt32(firstMultipleInput[0]);
+            int k = Convert.ToInt32(firstMultipleInput[1]);
+            List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
+            int result = DivisibleSumPairs.StartTask(n, k, ar);
             Console.WriteLine(result);
         }
     }
