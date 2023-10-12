@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using HackerRankTasks.Tasks;
 
 namespace HackerRankTasks
@@ -92,7 +93,7 @@ namespace HackerRankTasks
             List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
             int result = PickingNumbers.StartTask(a);
             Console.WriteLine(result);
-            */
+            
             // --- ---
 
             string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
@@ -101,6 +102,19 @@ namespace HackerRankTasks
             List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
             int result = DivisibleSumPairs.StartTask(n, k, ar);
             Console.WriteLine(result);
+            */
+            // --- ---
+
+            int q = Convert.ToInt32(Console.ReadLine());
+            for (int qItr = 0; qItr < q; qItr++)
+            {
+                string[] xyz = Console.ReadLine().Split(' ');
+                int x = Convert.ToInt32(xyz[0]);
+                int y = Convert.ToInt32(xyz[1]);
+                int z = Convert.ToInt32(xyz[2]);
+                string result = CatsAndAMouse.StartTask(x, y, z);
+                Console.WriteLine(result);
+            }
         }
     }
 }
