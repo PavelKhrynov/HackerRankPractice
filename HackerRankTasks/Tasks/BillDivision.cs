@@ -21,7 +21,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="k">Index of bill that will be exkluded</param>
         /// <param name="b">Amount of money from Anna for bills</param>
         /// <returns>'Bon Appetit' if evefithing right or how much Brian must refund to Anna</returns>
-        public static int StartTask(List<int> bill, int k, int b)
+        public static int SolveProblem(List<int> bill, int k, int b)
         {
             int totalSum = (bill.Sum() - bill[k]) / 2;
             return totalSum == b ? -1 : b - totalSum;

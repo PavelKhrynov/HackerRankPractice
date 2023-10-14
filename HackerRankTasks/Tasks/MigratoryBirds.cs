@@ -17,7 +17,7 @@ namespace HackerRankTasks.Tasks
         /// </summary>
         /// <param name="arr">List of the types of birds sighted</param>
         /// <returns>The lowest type id of the most frequently sighted birds</returns>
-        public static int StartTask(List<int> arr)
+        public static int SolveProblem(List<int> arr)
         {
             var dictionary = new Dictionary<int, int>
             {

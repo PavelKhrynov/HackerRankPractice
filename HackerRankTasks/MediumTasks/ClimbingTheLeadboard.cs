@@ -20,7 +20,7 @@ namespace HackerRankTasks.MediumTasks
         /// <param name="ranked">Initial leadboard in descending order</param>
         /// <param name="player">List of score for each player attempt in ascending order</param>
         /// <returns>List of ranks for each player attempt</returns>
-        public static List<int> StartTask(List<int> ranked, List<int> player)
+        public static List<int> SolveProblem(List<int> ranked, List<int> player)
         {
             var result = new List<int>();
 

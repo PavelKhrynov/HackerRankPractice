@@ -21,7 +21,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="cat2Position">Second cat position</param>
         /// <param name="mousePosition">Mouse position</param>
         /// <returns>Winner of the fight as string</returns>
-        public static string StartTask(int cat1Position, int cat2Position, int mousePosition)
+        public static string SolveProblem(int cat1Position, int cat2Position, int mousePosition)
         {
             int cat1Path = Math.Abs(cat1Position - mousePosition);
             int cat2Path = Math.Abs(cat2Position - mousePosition);

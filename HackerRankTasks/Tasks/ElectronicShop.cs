@@ -20,7 +20,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="drives">List of dricers's prices</param>
         /// <param name="b">Budget</param>
         /// <returns>Max spending</returns>
-        public static int StartTask(int[] keyboards, int[] drives, int b)
+        public static int SolveProblem(int[] keyboards, int[] drives, int b)
         {
             // сортируем списки цен товаров по возрастанию
             var sortedKeyboards = keyboards.OrderBy(x => x).ToList();

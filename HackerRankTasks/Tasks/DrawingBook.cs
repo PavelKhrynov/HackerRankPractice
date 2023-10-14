@@ -25,7 +25,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="n">Page number n book</param>
         /// <param name="p">Page to find</param>
         /// <returns>Number of page turn</returns>
-        public static int StartTask(int n, int p)
+        public static int SolveProblem(int n, int p)
         {
             // общее число пар страниц в книге
             int numberOfPagePairs = n / 2 + 1;

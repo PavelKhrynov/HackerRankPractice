@@ -22,7 +22,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="apples">Distances at which each apple falls from the tree</param>
         /// <param name="oranges">Distances at which each orange falls from the tree</param>
         /// <returns>Number of apples and oranges that fall on Sam's house</returns>
-        public static (int, int) StartTask(int s, int t, int a, int b, List<int> apples, List<int> oranges)
+        public static (int, int) SolveProblem(int s, int t, int a, int b, List<int> apples, List<int> oranges)
         {
             int applesCount = 0;
             int orangesCount = 0;

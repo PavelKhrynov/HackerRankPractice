@@ -18,7 +18,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="k">Divisor</param>
         /// <param name="ar">Array on int numbers</param>
         /// <returns>Number of pairs from description</returns>
-        public static int StartTask(int n, int k, List<int> ar)
+        public static int SolveProblem(int n, int k, List<int> ar)
         {
             int result = 0;
 

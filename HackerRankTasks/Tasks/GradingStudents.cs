@@ -22,7 +22,7 @@ namespace HackerRankTasks.Tasks
         /// </summary>
         /// <param name="grades">List of grades</param>
         /// <returns>List of rounded grades</returns>
-        public static List<int> StartTask(List<int> grades)
+        public static List<int> SolveProblem(List<int> grades)
         {
             var result = new List<int>();
 

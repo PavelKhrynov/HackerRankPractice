@@ -19,7 +19,7 @@ namespace HackerRankTasks.Tasks
         /// <param name="k">Minimum number of student to not cancel the class</param>
         /// <param name="a">List of arrival time of students</param>
         /// <returns>YES if class canceld otherwise NO</returns>
-        public static string StartTask(int k, List<int> a)
+        public static string SolveProblem(int k, List<int> a)
         {
             int inTimeCount = a.Count(x => x <= 0);
             return inTimeCount < k ? "YES" : "NO";

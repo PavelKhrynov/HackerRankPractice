@@ -13,14 +13,14 @@ namespace HackerRankTasks
 
             /*
             List<long> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt64(arrTemp)).ToList();
-            (long min, long max) = MinMaxSum.StartTask(arr);
+            (long min, long max) = MinMaxSum.SolveProblem(arr);
             Console.WriteLine($"{min} {max}");
             
             // --- ---
 
             int candlesCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> candles = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(candlesTemp => Convert.ToInt32(candlesTemp)).ToList();
-            int result = BirthdayCakeCandles.StartTask(candles);
+            int result = BirthdayCakeCandles.SolveProblem(candles);
             Console.WriteLine(result);
 
             // --- ---            
@@ -32,7 +32,7 @@ namespace HackerRankTasks
                 int gradesItem = Convert.ToInt32(Console.ReadLine().Trim());
                 grades.Add(gradesItem);
             }
-            List<int> result =  GradingStudents.StartTask(grades);
+            List<int> result =  GradingStudents.SolveProblem(grades);
             for (int i = 0;i < result.Count;i++)
             {
                 Console.WriteLine(result[i]);
@@ -51,21 +51,21 @@ namespace HackerRankTasks
             int n = Convert.ToInt32(thirdMultipleInput[1]);
             List<int> apples = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(applesTemp => Convert.ToInt32(applesTemp)).ToList();
             List<int> oranges = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(orangesTemp => Convert.ToInt32(orangesTemp)).ToList();
-            (int applesCount, int orangesCount) = AppleAndOrange.StartTask(s, t, a, b, apples, oranges);
+            (int applesCount, int orangesCount) = AppleAndOrange.SolveProblem(s, t, a, b, apples, oranges);
             Console.Write($"{applesCount} {orangesCount}");
             
             // --- ---
 
             int arrCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-            int result = MigratoryBirds.StartTask(arr);
+            int result = MigratoryBirds.SolveProblem(arr);
             Console.WriteLine(result);
             
             // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             int p = Convert.ToInt32(Console.ReadLine().Trim());
-            int result = DrawingBook.StartTask(n, p);
+            int result = DrawingBook.SolveProblem(n, p);
             Console.WriteLine(result);
             
             // --- ---
@@ -76,7 +76,7 @@ namespace HackerRankTasks
             int m = Convert.ToInt32(bnm[2]);
             int[] keyboards = Array.ConvertAll(Console.ReadLine().Split(' '), keyboardsTemp => Convert.ToInt32(keyboardsTemp));
             int[] drives = Array.ConvertAll(Console.ReadLine().Split(' '), drivesTemp => Convert.ToInt32(drivesTemp));
-            int moneySpent = ElectronicShop.StartTask(keyboards, drives, b);
+            int moneySpent = ElectronicShop.SolveProblem(keyboards, drives, b);
             Console.WriteLine(moneySpent.ToString());
             
             // --- ---
@@ -86,13 +86,13 @@ namespace HackerRankTasks
             int k = Convert.ToInt32(firstMultipleInput[1]);
             List<int> bill = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(billTemp => Convert.ToInt32(billTemp)).ToList();
             int b = Convert.ToInt32(Console.ReadLine().Trim());
-            int moneySpent = BillDivision.StartTask(bill, k, b);
+            int moneySpent = BillDivision.SolveProblem(bill, k, b);
             
             // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
-            int result = PickingNumbers.StartTask(a);
+            int result = PickingNumbers.SolveProblem(a);
             Console.WriteLine(result);
             
             // --- ---
@@ -101,7 +101,7 @@ namespace HackerRankTasks
             int n = Convert.ToInt32(firstMultipleInput[0]);
             int k = Convert.ToInt32(firstMultipleInput[1]);
             List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
-            int result = DivisibleSumPairs.StartTask(n, k, ar);
+            int result = DivisibleSumPairs.SolveProblem(n, k, ar);
             Console.WriteLine(result);
             
             // --- ---
@@ -113,7 +113,7 @@ namespace HackerRankTasks
                 int x = Convert.ToInt32(xyz[0]);
                 int y = Convert.ToInt32(xyz[1]);
                 int z = Convert.ToInt32(xyz[2]);
-                string result = CatsAndAMouse.StartTask(x, y, z);
+                string result = CatsAndAMouse.SolveProblem(x, y, z);
                 Console.WriteLine(result);
             }
             
@@ -123,7 +123,7 @@ namespace HackerRankTasks
             List<int> ranked = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(rankedTemp => Convert.ToInt32(rankedTemp)).ToList();
             int playerCount = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> player = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(playerTemp => Convert.ToInt32(playerTemp)).ToList();
-            List<int> result = ClimbingTheLeadboard.StartTask(ranked, player);
+            List<int> result = ClimbingTheLeadboard.SolveProblem(ranked, player);
             Console.WriteLine(String.Join("\n", result));
             */
             // --- ---
@@ -135,7 +135,7 @@ namespace HackerRankTasks
                 int n = Convert.ToInt32(firstMultipleInput[0]);
                 int k = Convert.ToInt32(firstMultipleInput[1]);
                 List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
-                string result = AngryProfessor.StartTask(k, a);
+                string result = AngryProfessor.SolveProblem(k, a);
                 Console.WriteLine(result);
             }
         }

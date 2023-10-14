@@ -17,7 +17,7 @@ namespace HackerRankTasks.Tasks
         /// </summary>
         /// <param name="arr">Array of 5 integers</param>
         /// <returns>Pair of max and min sum</returns>
-        public static (long, long) StartTask(List<long> arr)
+        public static (long, long) SolveProblem(List<long> arr)
         {
             long min = arr.Min();
             long max = arr.Max();

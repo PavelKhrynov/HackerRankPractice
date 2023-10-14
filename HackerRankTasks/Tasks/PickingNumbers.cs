@@ -16,7 +16,7 @@ namespace HackerRankTasks.Tasks
         /// </summary>
         /// <param name="a">Initial list on int numbers</param>
         /// <returns>Lenght of longest subarray that meets the criterion (always >= 2)</returns>
-        public static int StartTask(List<int> a)
+        public static int SolveProblem(List<int> a)
         {
             int maxLenght = 0;
             var numCountDict = new Dictionary<int, int>();

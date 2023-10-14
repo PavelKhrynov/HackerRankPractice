@@ -19,7 +19,7 @@ namespace HackerRankTasks.Tasks
         /// </summary>
         /// <param name="candles">List of candle's height</param>
         /// <returns>Number of tallest candles</returns>
-        public static int StartTask(List<int> candles)
+        public static int SolveProblem(List<int> candles)
         {
             int max = candles.Max();
             return candles.Count(x => x == max);
