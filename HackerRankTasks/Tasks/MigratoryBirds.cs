@@ -6,8 +6,17 @@ using System.Threading.Tasks;
 
 namespace HackerRankTasks.Tasks
 {
+    /*
+        Given an array of bird sightings where every element represents a bird type id, determine the id of the most frequently sighted type.
+        If more than 1 type has been spotted that maximum amount, return the smallest of their ids.
+    */
     internal class MigratoryBirds
     {
+        /// <summary>
+        /// Find the lowest type id of the most frequently sighted birds
+        /// </summary>
+        /// <param name="arr">List of the types of birds sighted</param>
+        /// <returns>The lowest type id of the most frequently sighted birds</returns>
         public static int StartTask(List<int> arr)
         {
             var dictionary = new Dictionary<int, int>

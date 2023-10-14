@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace HackerRankTasks.MediumTasks
 {
+    /*
+        An arcade game player wants to climb to the top of the leaderboard and track their ranking.
+        The game uses Dense Ranking, so its leaderboard works like this:
+        * The player with the highest score is ranked number 1 on the leaderboard.
+        * Players who have equal scores receive the same ranking number, and the next player(s) receive the immediately following ranking number.
+    */
     internal class ClimbingTheLeadboard
     {
+        /// <summary>
+        /// Calculate rank of each new player score
+        /// </summary>
+        /// <param name="ranked">Initial leadboard in descending order</param>
+        /// <param name="player">List of score for each player attempt in ascending order</param>
+        /// <returns>List of ranks for each player attempt</returns>
         public static List<int> StartTask(List<int> ranked, List<int> player)
         {
             var result = new List<int>();

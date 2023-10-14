@@ -6,8 +6,20 @@ using System.Threading.Tasks;
 
 namespace HackerRankTasks.Tasks
 {
+    /*
+        A person wants to determine the most expensive computer keyboard and USB drive that can be purchased with a give budget.
+        Given price lists for keyboards and USB drives and a budget, find the cost to buy them.
+        If it is not possible to buy both items, return -1.
+    */
     internal class ElectronicShop
     {
+        /// <summary>
+        /// Calculate best possible spend for budget
+        /// </summary>
+        /// <param name="keyboards">List of keyboard's prices</param>
+        /// <param name="drives">List of dricers's prices</param>
+        /// <param name="b">Budget</param>
+        /// <returns>Max spending</returns>
         public static int StartTask(int[] keyboards, int[] drives, int b)
         {
             // сортируем списки цен товаров по возрастанию
