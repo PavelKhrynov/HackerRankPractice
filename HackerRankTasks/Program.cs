@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using HackerRankTasks.Tasks;
+using HackerRankTasks.MediumTasks;
 
 namespace HackerRankTasks
 {
@@ -102,7 +103,7 @@ namespace HackerRankTasks
             List<int> ar = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arTemp => Convert.ToInt32(arTemp)).ToList();
             int result = DivisibleSumPairs.StartTask(n, k, ar);
             Console.WriteLine(result);
-            */
+            
             // --- ---
 
             int q = Convert.ToInt32(Console.ReadLine());
@@ -113,6 +114,28 @@ namespace HackerRankTasks
                 int y = Convert.ToInt32(xyz[1]);
                 int z = Convert.ToInt32(xyz[2]);
                 string result = CatsAndAMouse.StartTask(x, y, z);
+                Console.WriteLine(result);
+            }
+            
+            // --- ---
+
+            int rankedCount = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> ranked = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(rankedTemp => Convert.ToInt32(rankedTemp)).ToList();
+            int playerCount = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> player = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(playerTemp => Convert.ToInt32(playerTemp)).ToList();
+            List<int> result = ClimbingTheLeadboard.StartTask(ranked, player);
+            Console.WriteLine(String.Join("\n", result));
+            */
+            // --- ---
+
+            int t = Convert.ToInt32(Console.ReadLine().Trim());
+            for (int tItr = 0; tItr < t; tItr++)
+            {
+                string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+                int n = Convert.ToInt32(firstMultipleInput[0]);
+                int k = Convert.ToInt32(firstMultipleInput[1]);
+                List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+                string result = AngryProfessor.StartTask(k, a);
                 Console.WriteLine(result);
             }
         }
