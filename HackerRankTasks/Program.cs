@@ -125,7 +125,7 @@ namespace HackerRankTasks
             List<int> player = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(playerTemp => Convert.ToInt32(playerTemp)).ToList();
             List<int> result = ClimbingTheLeadboard.SolveProblem(ranked, player);
             Console.WriteLine(String.Join("\n", result));
-            */
+            
             // --- ---
 
             int t = Convert.ToInt32(Console.ReadLine().Trim());
@@ -138,6 +138,13 @@ namespace HackerRankTasks
                 string result = AngryProfessor.SolveProblem(k, a);
                 Console.WriteLine(result);
             }
+            */
+            // --- ---
+
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+            List<int> result = CutTheSticks.SolveProblem(arr);
+            Console.WriteLine(String.Join("\n", result));
         }
     }
 }
