@@ -138,13 +138,22 @@ namespace HackerRankTasks
                 string result = AngryProfessor.SolveProblem(k, a);
                 Console.WriteLine(result);
             }
-            */
+            
             // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
             List<int> result = CutTheSticks.SolveProblem(arr);
             Console.WriteLine(String.Join("\n", result));
+            */
+            // --- ---
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int i = Convert.ToInt32(firstMultipleInput[0]);
+            int j = Convert.ToInt32(firstMultipleInput[1]);
+            int k = Convert.ToInt32(firstMultipleInput[2]);
+            int result = BeautifulDaysAtTheMovies.SolveProblem(i, j, k);
+            Console.WriteLine(result);
         }
     }
 }
