@@ -154,7 +154,7 @@ namespace HackerRankTasks
             int k = Convert.ToInt32(firstMultipleInput[2]);
             int result = BeautifulDaysAtTheMovies.SolveProblem(i, j, k);
             Console.WriteLine(result);
-            */
+            
             // --- ---
 
             string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
@@ -163,6 +163,13 @@ namespace HackerRankTasks
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
             int result = LisasWorkbook.SolveProblem(n, k, arr);
             Console.WriteLine(result);
+            */
+            // --- ---
+
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> p = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(pTemp => Convert.ToInt32(pTemp)).ToList();
+            List<int> result = SequenceEquasion.SolveProblem(p);
+            Console.WriteLine(String.Join("\n", result));
         }
     }
 }
