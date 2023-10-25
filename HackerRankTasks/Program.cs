@@ -163,13 +163,42 @@ namespace HackerRankTasks
             List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
             int result = LisasWorkbook.SolveProblem(n, k, arr);
             Console.WriteLine(result);
-            */
+            
             // --- ---
 
             int n = Convert.ToInt32(Console.ReadLine().Trim());
             List<int> p = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(pTemp => Convert.ToInt32(pTemp)).ToList();
             List<int> result = SequenceEquasion.SolveProblem(p);
             Console.WriteLine(String.Join("\n", result));
+            
+            // --- ---
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int n = Convert.ToInt32(firstMultipleInput[0]);
+            int k = Convert.ToInt32(firstMultipleInput[1]);
+            int q = Convert.ToInt32(firstMultipleInput[2]);
+            List<int> a = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(aTemp => Convert.ToInt32(aTemp)).ToList();
+            List<int> queries = new List<int>();
+            for (int i = 0; i < q; i++)
+            {
+                int queriesItem = Convert.ToInt32(Console.ReadLine().Trim());
+                queries.Add(queriesItem);
+            }
+            List<int> result = CircularArrayRotation.SolveProblem(a, k, queries);
+            Console.WriteLine(String.Join("\n", result));
+            */
+            // --- ---
+
+            int t = Convert.ToInt32(Console.ReadLine().Trim());
+            for (int tItr = 0; tItr < t; tItr++)
+            {
+                string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+                int n = Convert.ToInt32(firstMultipleInput[0]);
+                int m = Convert.ToInt32(firstMultipleInput[1]);
+                int s = Convert.ToInt32(firstMultipleInput[2]);
+                int result = SaveThePrisoner.SolveProblem(n, m, s);
+                Console.WriteLine(result);
+            }
         }
     }
 }
