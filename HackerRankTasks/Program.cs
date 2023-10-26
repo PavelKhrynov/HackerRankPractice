@@ -186,7 +186,7 @@ namespace HackerRankTasks
             }
             List<int> result = CircularArrayRotation.SolveProblem(a, k, queries);
             Console.WriteLine(String.Join("\n", result));
-            */
+            
             // --- ---
 
             int t = Convert.ToInt32(Console.ReadLine().Trim());
@@ -197,6 +197,21 @@ namespace HackerRankTasks
                 int m = Convert.ToInt32(firstMultipleInput[1]);
                 int s = Convert.ToInt32(firstMultipleInput[2]);
                 int result = SaveThePrisoner.SolveProblem(n, m, s);
+                Console.WriteLine(result);
+            }
+            */
+            // --- ---
+
+            int q = Convert.ToInt32(Console.ReadLine().Trim());
+            for (int qItr = 0; qItr < q; qItr++)
+            {
+                int n = Convert.ToInt32(Console.ReadLine().Trim());
+                List<List<int>> container = new List<List<int>>();
+                for (int i = 0; i < n; i++)
+                {
+                    container.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(containerTemp => Convert.ToInt32(containerTemp)).ToList());
+                }
+                string result = OrganizingContainersOfBalls.SolveProblem(container);
                 Console.WriteLine(result);
             }
         }
