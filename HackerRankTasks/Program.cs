@@ -199,7 +199,7 @@ namespace HackerRankTasks
                 int result = SaveThePrisoner.SolveProblem(n, m, s);
                 Console.WriteLine(result);
             }
-            */
+            
             // --- ---
 
             int q = Convert.ToInt32(Console.ReadLine().Trim());
@@ -214,6 +214,12 @@ namespace HackerRankTasks
                 string result = OrganizingContainersOfBalls.SolveProblem(container);
                 Console.WriteLine(result);
             }
+            */
+            // --- ---
+
+            string s = Console.ReadLine();
+            string result = Encryption.SolveProblem(s);
+            Console.WriteLine(result);
         }
     }
 }
