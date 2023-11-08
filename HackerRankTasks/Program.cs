@@ -214,12 +214,40 @@ namespace HackerRankTasks
                 string result = OrganizingContainersOfBalls.SolveProblem(container);
                 Console.WriteLine(result);
             }
-            */
+            
             // --- ---
 
             string s = Console.ReadLine();
             string result = Encryption.SolveProblem(s);
             Console.WriteLine(result);
+            
+            // --- ---
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int n = Convert.ToInt32(firstMultipleInput[0]);
+            int k = Convert.ToInt32(firstMultipleInput[1]);
+            string[] secondMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int r_q = Convert.ToInt32(secondMultipleInput[0]);
+            int c_q = Convert.ToInt32(secondMultipleInput[1]);
+            List<List<int>> obstacles = new List<List<int>>();
+            for (int i = 0; i < k; i++)
+            {
+                obstacles.Add(Console.ReadLine().TrimEnd().Split(' ').ToList().Select(obstaclesTemp => Convert.ToInt32(obstaclesTemp)).ToList());
+            }
+            int result = QueensAttackII.SolveProblem(n, k, r_q, c_q, obstacles);
+            Console.WriteLine(result);
+            */
+            // --- ---
+
+            int q = Convert.ToInt32(Console.ReadLine().Trim());
+            for (int qItr = 0; qItr < q; qItr++)
+            {
+                string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+                int a = Convert.ToInt32(firstMultipleInput[0]);
+                int b = Convert.ToInt32(firstMultipleInput[1]);
+                int result = SherlockAndSquares.SolveProblem(a, b);
+                Console.WriteLine(result);
+            }
         }
     }
 }
