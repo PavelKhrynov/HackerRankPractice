@@ -236,7 +236,7 @@ namespace HackerRankTasks
             }
             int result = QueensAttackII.SolveProblem(n, k, r_q, c_q, obstacles);
             Console.WriteLine(result);
-            */
+            
             // --- ---
 
             int q = Convert.ToInt32(Console.ReadLine().Trim());
@@ -248,6 +248,15 @@ namespace HackerRankTasks
                 int result = SherlockAndSquares.SolveProblem(a, b);
                 Console.WriteLine(result);
             }
+            */
+            // --- ---
+
+            string[] nk = Console.ReadLine().Split(' ');
+            int n = Convert.ToInt32(nk[0]);
+            int k = Convert.ToInt32(nk[1]);
+            int[] c = Array.ConvertAll(Console.ReadLine().Split(' '), cTemp => Convert.ToInt32(cTemp));
+            int result = JumpingontheCloudsRevisited.SolveProblem(c, k);
+            Console.WriteLine(result);
         }
     }
 }
