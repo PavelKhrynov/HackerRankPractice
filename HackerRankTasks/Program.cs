@@ -248,7 +248,7 @@ namespace HackerRankTasks
                 int result = SherlockAndSquares.SolveProblem(a, b);
                 Console.WriteLine(result);
             }
-            */
+            
             // --- ---
 
             string[] nk = Console.ReadLine().Split(' ');
@@ -257,6 +257,27 @@ namespace HackerRankTasks
             int[] c = Array.ConvertAll(Console.ReadLine().Split(' '), cTemp => Convert.ToInt32(cTemp));
             int result = JumpingontheCloudsRevisited.SolveProblem(c, k);
             Console.WriteLine(result);
+            
+            // --- ---
+
+            int n = Convert.ToInt32(Console.ReadLine().Trim());
+            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+            int result = EqualizeTheArray.SolveProblem(arr);
+            Console.WriteLine(result);
+            */
+            // --- ---
+
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            int n = Convert.ToInt32(firstMultipleInput[0]);
+            int m = Convert.ToInt32(firstMultipleInput[1]);
+            List<string> topic = new List<string>();
+            for (int i = 0; i < n; i++)
+            {
+                string topicItem = Console.ReadLine();
+                topic.Add(topicItem);
+            }
+            List<int> result = ACMICPCTeam.SolveProblem(topic);
+            Console.WriteLine(String.Join("\n", result));
         }
     }
 }
