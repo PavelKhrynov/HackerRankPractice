@@ -9,23 +9,17 @@ namespace HackerRankTasks
     {
         static void Main(string[] args)
         {
-            int p = Convert.ToInt32(Console.ReadLine().Trim());
+            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
 
-            int q = Convert.ToInt32(Console.ReadLine().Trim());
+            int n = Convert.ToInt32(firstMultipleInput[0]);
 
-            var result = ModifiedKaprekarNumbers.SolveProblem(p, q);
+            int d = Convert.ToInt32(firstMultipleInput[1]);
 
-            if (result.Count == 0)
-            {
-                Console.WriteLine("INVALID RANGE");
-            }
-            else
-            {
-                for (int i = 0; i < result.Count; i++)
-                {
-                    Console.Write(result[i] + " ");
-                }
-            }
+            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
+
+            int result = BeatifulTriplet.SolveProblem(d, arr);
+
+            Console.WriteLine(result);
         }
     }
 }
