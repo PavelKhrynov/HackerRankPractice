@@ -9,15 +9,13 @@ namespace HackerRankTasks
     {
         static void Main(string[] args)
         {
-            string[] firstMultipleInput = Console.ReadLine().TrimEnd().Split(' ');
+            string s = Console.ReadLine();
 
-            int n = Convert.ToInt32(firstMultipleInput[0]);
+            string t = Console.ReadLine();
 
-            int d = Convert.ToInt32(firstMultipleInput[1]);
+            int k = Convert.ToInt32(Console.ReadLine().Trim());
 
-            List<int> arr = Console.ReadLine().TrimEnd().Split(' ').ToList().Select(arrTemp => Convert.ToInt32(arrTemp)).ToList();
-
-            int result = BeatifulTriplet.SolveProblem(d, arr);
+            string result = AppendAndDelete.SolveProblem(s, t, k);
 
             Console.WriteLine(result);
         }
